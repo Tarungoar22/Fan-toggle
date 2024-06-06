@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+#fan {
+    width: 200px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #000;
+    animation: rotateA linear infinite;
+    transition: 0.2s ease-in;
+    margin: 23px auto;
+}
+
+@keyframes rotateA {
+    100%{
+        transform : rotate(360deg);
+    }
+}
+
+.main img {
+    width: 32%;
+}
+.main {
+    text-align: center;
+    position: relative;
+}
+.main button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin: 0px 3px;
+}
+button#onbtn {
+    background: #16b716;
+    color: #fff;
+}
+button#offbtn {
+    background: #dd0b0b;
+    color: #fff;
+}
